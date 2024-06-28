@@ -13,14 +13,15 @@ of specific words.
 ## System and Software Requirements
 
 - Python 3.x
-- Pandas library
+- pipenv
+- Pandas library (installed with the pipenv install)
 - A text editor or IDE (e.g., PyCharm)
 
 ## Installation and Setup
 
 ### Cloning the Repository and Setting Up Environment
 ```sh
-git clone <repository_url>
+git clone https://github.com/MaxZ9920/PythonProgramming_NaiveBayesianClassifier.git
 cd PythonProgramming_assignment_NBC
 pip install pipenv
 pipenv install
@@ -36,12 +37,15 @@ Parts 1-9 should be used for training,
 and part 10 should be used for testing.
 
 Replace the global variable 'directory' in the script
-with the path to your 'corpus' folder including the parts.
+with the path to your 'corpus' folder including the parts:
+```sh
+directory = "/path/to/your/corpus"
+```
 
 ### Running the Code
 
 ```sh
-pipenv run python src/NBC_main.py
+pipenv run python NBC_main.py
 ```
 
 This will:
